@@ -1,0 +1,54 @@
+id: gcp_kv_resume
+namespace: zoomcamp
+
+tasks:
+  - id: gcp_creds
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_CREDS
+    kvType: JSON
+    value: |
+      {
+        "type": "service_account",
+        "project_id": "..."
+      }
+      ###########################################
+      # make sure to load your creds.json to kv store in your namespace its like 
+      #{
+        #"type": "service_account",
+        #"project_id": "xxxx",
+        #"private_key_id": "xxxxx",
+        #"private_key": "xxxx",
+        #"client_email": "xxxx",
+        #"client_id": "xxxx",
+        #"auth_uri": "xxx",
+        #"token_uri": "xxxx",
+        #"auth_provider_x509_cert_url": "xxx",
+        #"client_x509_cert_url": "xxx",
+        #"universe_domain": "xxx"
+      #}
+      ###########################################
+
+    
+  - id: gcp_project_id
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_PROJECT_ID
+    kvType: STRING
+    value: xxxxxx # TODO replace with your project id
+
+  - id: gcp_location
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_LOCATION
+    kvType: STRING
+    value: xxxxx # TODO replace to prefered location
+
+  - id: gcp_bucket_name
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_BUCKET_NAME
+    kvType: STRING
+    value: xxx_bucket # TODO make sure it's globally unique!
+
+  - id: gcp_dataset
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_DATASET
+    kvType: STRING
+    value: xxxx # TODO replace with your dataset
