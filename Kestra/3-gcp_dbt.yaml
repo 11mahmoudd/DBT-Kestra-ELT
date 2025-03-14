@@ -8,14 +8,14 @@ inputs:
     values:
       - dbt build
       - dbt debug # use when running the first time to validate DB connection
+      - dbt docs
 
 tasks:
   - id: sync
     type: io.kestra.plugin.git.SyncNamespaceFiles
-    url: https://github.com/11mahmoudd/DBT-Kestra-ETL
+    url: https://github.com/11mahmoudd/NY_Taxi_DBT # any dbt project repo could work
     branch: main
     namespace: "{{flow.namespace}}"
-    gitDirectory: dbt
     dryRun: false
     # disabled: true # this Git Sync is needed only when running it the first time, afterwards the task can be disabled
 
@@ -52,3 +52,5 @@ tasks:
             timeout_seconds: 300
             fixed_retries: 1
         target: dev
+
+
