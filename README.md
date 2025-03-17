@@ -1,7 +1,7 @@
-# DBT-Kestra-ETL Project
+# DBT-Kestra-ELT Project
 
 ## **📌 Overview**  
-The **DBT-Kestra-ETL** project automates the **end-to-end data pipeline**, leveraging **Kestra** for data ingestion and **dbt** (Data Build Tool) for transformations in **Google BigQuery**.  
+The **DBT-Kestra-ELT** project automates the **end-to-end data pipeline**, leveraging **Kestra** for data ingestion and **dbt** (Data Build Tool) for transformations in **Google BigQuery**.  
 ---
 ## **Architecture** 🏛️  
 1️⃣ **Kestra Flows** handle:  
@@ -69,4 +69,4 @@ triggers:
 ✅ **Automate data ingestion & transformation**  
 ✅ **Maintain fresh & reliable data in BigQuery**  
 ✅ **Use dbt for transformation scheduling & CI/CD**  
-✅ **Ensure scalable & efficient ETL workflows**  
+✅ **Ensure scalable & efficient ELT workflows**  
