@@ -1,9 +1,10 @@
-### 📌 **DBT-Kestra-ETL Project**
----
-#### **🚀 Overview**  
+#📌 **DBT-Kestra-ETL Project**
+
+
+### **🚀 Overview**  
 The **DBT-Kestra-ETL** project automates the **end-to-end data pipeline**, leveraging **Kestra** for data ingestion and **dbt** (Data Build Tool) for transformations in **Google BigQuery**.  
 ---
-### **Architecture** 🏛️  
+## **Architecture** 🏛️  
 1️⃣ **Kestra Flows** handle:  
    - Extracting data from sources 📂  
    - Loading data into **BigQuery** 🎯  
@@ -15,7 +16,7 @@ The **DBT-Kestra-ETL** project automates the **end-to-end data pipeline**, lever
 
 ---
 
-### **⚙️ Workflow Breakdown**  
+## **⚙️ Workflow Breakdown**  
 
 #### **1️⃣ Data Ingestion & Loading with Kestra**
 - **Kestra flows** extract raw data from various sources.  
@@ -34,7 +35,7 @@ The **DBT-Kestra-ETL** project automates the **end-to-end data pipeline**, lever
 
 ---
 
-### **🔄 Automation Flow**  
+## **🔄 Automation Flow**  
 
 #### **📌 Kestra Flow for Data Ingestion**
 Handles **data extraction and loading** into BigQuery.    
@@ -57,14 +58,15 @@ triggers:
 
 ---
 
-### **🚀 Technologies Used**
+## **🚀 Technologies Used**
 - **Kestra**: Orchestration & data ingestion.  
-- **dbt (Data Build Tool)**: SQL transformations & data modeling.  
+- **dbt (Data Build Tool)**: SQL transformations & data modeling.
+- dbt repo: https://github.com/11mahmoudd/NY_Taxi_DBT  
 - **Google BigQuery**: Cloud data warehouse.  
 
 ---
 
-### **🎯 Goals**
+## **🎯 Goals**
 ✅ **Automate data ingestion & transformation**  
 ✅ **Maintain fresh & reliable data in BigQuery**  
 ✅ **Use dbt for transformation scheduling & CI/CD**  
